@@ -160,10 +160,19 @@ tests/test_golden.py   real-world style addresses and their expected parts
   from Konya's; the official name is Ereğli → keep the rename in `DISTRICT_NAMES`
   when regenerating the data.
 
-## Related
+## Türkiye toolkit
 
-- [trkit](https://github.com/ardazeybek-dev/trkit) / [trkit-js](https://github.com/ardazeybek-dev/trkit-js): TC kimlik, VKN, IBAN, phone numbers, Turkish casing
-- [ekstre](https://github.com/ardazeybek-dev/ekstre): Turkish bank statement exports into typed transactions
+Part of a small set of tools for the Turkish data that general-purpose libraries get wrong:
+
+| Package | What it does | Install |
+| --- | --- | --- |
+| [trkit](https://github.com/ardazeybek-dev/trkit) | Turkish casing (`i` → `İ`), slugify, TCKN, IBAN and plate validation · Python + CLI | `pip install trkit` |
+| [trkit-js](https://github.com/ardazeybek-dev/trkit-js) | The same for JavaScript, plus VKN, phone numbers and Zod schemas | `npm install @ardazeybek-dev/trkit` |
+| [kvkk](https://github.com/ardazeybek-dev/kvkk) | Finds and masks Turkish personal data in files, logs and dumps | `pip install kvkk` |
+| [ekstre](https://github.com/ardazeybek-dev/ekstre) | Turkish bank statement exports (.xlsx, .xls, .csv) into typed transactions | `pip install ekstre` |
+| [isgunu](https://github.com/ardazeybek-dev/isgunu) | Public holidays, arife half days and business-day arithmetic · Python + JS | `pip install isgunu` |
+| [efatura-tr](https://github.com/ardazeybek-dev/efatura) | Reads e-Fatura / e-Arşiv (UBL-TR) XML and checks that the totals add up | `pip install efatura-tr` |
+| [bordro](https://github.com/ardazeybek-dev/bordro) | Payroll: gross ↔ net with the cumulative income tax · TypeScript | `npm install bordro` |
 
 ## License
 
